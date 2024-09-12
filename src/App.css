@@ -1,38 +1,87 @@
 .App {
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 20px 30px rgba(65, 50, 100, 0.08);
+}
+
+.displayed-city {
   text-align: center;
+  font-size: 40px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.current-temperature {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 60px;
+}
+.displayed-temperature-value {
+  font-weight: 700;
+}
+.displayed-temperature-unit {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.current-data {
+  display: flex;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.displayed-emoji-right {
+  justify-content: end;
+
+  font-size: 50px;
+}
+.displayed-emoji-left {
+  font-size: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  text-align: center;
+  font-size: 19px;
+}
+p .highlighted-data {
+  color: #61c0bf;
+}
+main {
+  padding: 5px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px 0;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.column:hover {
+  background: #fae3d9;
+}
+
+.weather-forecast-day {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.forecast-temperature-max {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  color: #61c0bf;
+}
+.forecast-temperature-min {
+  padding: 5px;
+  font-size: 15px;
+  color: #61c0bf;
+}
+
+.column img {
+  width: 84px;
 }
